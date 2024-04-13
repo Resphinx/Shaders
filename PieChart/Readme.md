@@ -22,3 +22,5 @@ To-do roadmap:
 - Adding the background.
 - Changing the input type to float arrays.
 - Fixing the transparency.
+
+![image](https://github.com/Resphinx/Shaders/assets/153681720/ab9fb4e2-47b0-44ae-ac51-d82fa2291391)
