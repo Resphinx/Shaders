@@ -25,3 +25,6 @@ To-Do roadmap:
 - Capability to delay parts of the character until a certain event (e.g. space). In some cases and scripts, the dots or accent are placed after the whole word is written.
 - Finding a way to design character calligraphy more intuitive.
 - Checking the functionality in HDRP and mobile.
+
+![image](https://github.com/Resphinx/Shaders/assets/153681720/a9686d35-329d-459e-aa76-45fbbccbf8e9)
+
