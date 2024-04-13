@@ -4955,7 +4955,7 @@
     "m_Value": 0.0,
     "m_FloatType": 1,
     "m_RangeValues": {
-        "x": 0.0,
+        "x": -1.0,
         "y": 1.0
     }
 }
@@ -5559,7 +5559,7 @@
     "m_SourceType": 1,
     "m_FunctionName": "NormalFrag",
     "m_FunctionSource": "",
-    "m_FunctionBody": "float ne = _NormalEffect * rawAlpha;\nfloat3 a = ne * charRGB;\nfloat3 b =  (1 - ne) * float3(0,0,1) + a;\nif (!noMap)\n\ta = a + (1 - ne) * normalRGB;\nif (noMap) Out = b;\nelse\n{\n\tif (!onText) Out = a;\n\telse Out = b;\n}\n"
+    "m_FunctionBody": "float ne = abs(_NormalEffect) * rawAlpha;\r\nfloat3 a = ne * charRGB;\r\nif (_NormalEffect < 0)\r\n{\r\n\ta.r = -a.r;\r\n\ta.g = -a.g;\r\n}\r\nfloat3 b =  (1 - ne) * float3(0,0,1) + a;\r\nif (!noMap)\r\n\ta = a + (1 - ne) * normalRGB;\r\nif (noMap) Out = b;\r\nelse\r\n{\r\n\tif (!onText) Out = a;\r\n\telse Out = b;\r\n}\r\n"
 }
 
 {
