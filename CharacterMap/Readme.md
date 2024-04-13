@@ -14,6 +14,9 @@ For the material:
 - You can set the direction of the text here as well.
 - Currently, the shader can only work with fixed and same length characters (I'm using Courier font).
 
+- <b>Color Effect</b> and <b>Normal Effect</b> adjust the appearance of the text (higher color effects are good for paper/ink and higher normal effects are good for inscriptions.
+- The cursor will be the shape of the second character on the map on empty positions or a rectangle on letters. It will blink with a speed and its position can be set.
+
 Calligraphy:
 - By calligraphy I mean the time-based writing of each letter. The time is calculated by the red channel of the character map (0..1 corresponds to 0..100% of the time allocated to each character, with the <b>Appear After</b> property). Currently, only the "i" letter has this feature for testing.
 
